@@ -425,4 +425,3 @@ select
  from person P 
 	cross join store S
 	inner join band B on B.band_code = S.band_code;
-
