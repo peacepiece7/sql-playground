@@ -184,6 +184,10 @@ select
     extract(second from sysdate())
 from sqld;
 
+-- yyyy-mm-dd
+select date_format(now(), '%Y-%m-%d');
+select date(now());
+
 -- adddate(arg1, arg2)
 select 
 	'2024-01-01', 
