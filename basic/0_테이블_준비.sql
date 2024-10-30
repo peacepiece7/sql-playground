@@ -854,3 +854,18 @@ INSERT INTO DEPARTMENTS (department_id, department_name, manager_id, location_id
 (250, 'Retail Sales', NULL, 1700),
 (260, 'Recruiting', NULL, 1700),
 (270, 'Payroll', NULL, 1700);
+
+-- event
+CREATE TABLE event (
+   event_name varchar(255),
+   content varchar(255),
+   member_id varchar(255),
+   start_date datetime not null,
+   end_date datetime not null
+);
+insert into event(event_name, content, member_id, start_date, end_date) values
+("20% 할인 쿠폰", "연말 이벤트", "starboy01", "2024-12-01", "2025-12-01"),
+("30% 할인 쿠폰", "새해 이벤트", "starboy02", "2024-01-01", "2025-01-01"),
+("40% 할인 쿠폰", "상시 이벤트", "starboy03", "2020-01-01", "2025-01-01"),
+("50% 할인 쿠폰", "고여잇는 이벤트", "starboy04", "1950-01-01", "2025-01-01");
+
